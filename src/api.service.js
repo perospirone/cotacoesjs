@@ -10,12 +10,13 @@ async function getData() {
     const ciel = await axios.get(urlApi + "ciel3");
     
     //Resolve isso quando voltar
-    let bidi4 = data[0].data.results;
-    let petr4 = data[1].data.results;
-    let qual3 = data[2].data.results;
-    let ciel3 = data[3].data.results;
+    let bidi4 = bidi.data.results;
+    let petr4 = petr.data.results;
+    let qual3 = qual.data.results;
+    let ciel3 = ciel.data.results;
 
     let acoes = {bidi4:bidi4, petr4:petr4, qual3:qual3, ciel3:ciel3}
+
 
     return acoes;
 }

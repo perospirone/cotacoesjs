@@ -1,14 +1,14 @@
-getJson = require('./testeApiScript')
-getData = require('./testeApiAcoes')
+getJson = require('./api.requests.js')
+getData = require('./api.service.js')
 
 getJson()
     .then(data => {
-        //console.log(data)
+        console.log(data)
     })
     .catch(e => console.error(e));
 
 getData()
-    .then(data2 => {
-        console.log(data2)
+    .then(dados => {
+        console.log(dados)
     })
-    .catch(e => console.error(e))
+    .catch(err => console.error(err))
